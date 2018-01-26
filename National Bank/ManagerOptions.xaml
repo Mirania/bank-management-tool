@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication1.ManagerOptions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Bank Management Tool" MinHeight="600" MaxHeight="600" MinWidth="800" MaxWidth="800">
+    <Grid>
+        <Border BorderBrush="Gainsboro" Background="GhostWhite" BorderThickness="1" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="788" Margin="0,0,-28,0">
+            <Image Source="logo.png" Margin="609,-1,9,-1"/>
+        </Border>
+        <Label x:Name="label" Content="Manager Options" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" Height="42" Width="590" FontFamily="Franklin Gothic Book" FontSize="24"/>
+        <Button x:Name="button1" Content="Manage Employees" HorizontalAlignment="Left" Margin="277,184,0,0" VerticalAlignment="Top" Width="225" Height="76" FontFamily="Franklin Gothic Book" FontSize="24" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Approve Loans" HorizontalAlignment="Left" Margin="277,359,0,0" VerticalAlignment="Top" Width="225" Height="76" FontFamily="Franklin Gothic Book" FontSize="24" Click="button2_Click"/>
+        <Label x:Name="textBox" Height="23" Margin="487,12,173,0" Content="Return to Menu" VerticalAlignment="Top" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="515,35,0,0" VerticalAlignment="Top" Width="58" Height="53" Background="{x:Null}" BorderBrush="{x:Null}" Click="button_Click">
+            <Image Source="undo_256.png" Height="39" Width="70" />
+        </Button>
+    </Grid>
+</Window>

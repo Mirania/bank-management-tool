@@ -1,0 +1,257 @@
+﻿<Application x:Class="WpfApplication1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApplication1"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+
+        <Style x:Key="sharesIDBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="125" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="sharesAmountBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="145" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="sharesValueBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="155" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="sharesPartBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="loanIDBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="90" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="loanTypeBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="130" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="loanType2BorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="160" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="loanValueBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="130" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="loanInterestBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="215" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="loanInterest2BorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="185" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="empNameBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="300" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="empIDBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="125" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="empSBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="accountTypeBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="clientNameBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="325" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="clientIDBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="clientNIFBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="accountIDBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="165" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="accountBalanceBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="spBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="GhostWhite" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="565" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+        <Style x:Key="BorderButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontFamily" Value="Franklin Gothic Book" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+        <Style x:Key="BorderTextStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontFamily" Value="Franklin Gothic Book" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HeaderSharesID" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="125" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HeaderSharesAmt" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="145" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HeaderSharesV" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="155" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HeaderSharesP" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HloansID" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="90" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HloansT" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="130" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HloansT2" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="160" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HloansV" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="130" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HloansI" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="215" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HloansI2" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="185" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HempI" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="125" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HempN" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="300" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HempS" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HuserID" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HuserN" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="325" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HuserNIF" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="140" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HaccID" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="165" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HaccT" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="HaccB" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="CornflowerBlue" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </Application.Resources>
+</Application>

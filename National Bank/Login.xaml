@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication1.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Bank Management Tool" MinHeight="600" MaxHeight="600" MinWidth="800" MaxWidth="800">
+    <Grid>
+        <Border BorderBrush="Gainsboro" Background="GhostWhite" BorderThickness="1" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="788" Margin="0,0,-28,0">
+            <Image Source="logo.png" Margin="609,-1,9,-1"/>
+        </Border>
+        <Label x:Name="label" Content="Login" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" Height="42" Width="590" FontFamily="Franklin Gothic Book" FontSize="24"/>
+        <TextBox x:Name="username" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="37" Margin="304,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339" FontSize="18" FontFamily="Franklin Gothic Book" />
+        <PasswordBox x:Name="password" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="37" Margin="304,264,0,0" VerticalAlignment="Top" Width="339" FontSize="18" FontFamily="Franklin Gothic Book" KeyDown="OnKeyDownHandler"/>
+        <Label x:Name="label1" Content="Username" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="156,190,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Franklin Gothic Book"/>
+        <Label x:Name="label2" Content="Password" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="162,264,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book" FontSize="24"/>
+        <Button x:Name="button" Content="Log in" HorizontalAlignment="Left" Margin="545,339,0,0" VerticalAlignment="Top" Width="98" Height="34" Click="button_Click"/>
+        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="234" Margin="129,166,0,0" VerticalAlignment="Top" Width="548" CornerRadius="8,8,8,8"/>
+        <Label x:Name="x" Content="Stuff" HorizontalContentAlignment="Right"  HorizontalAlignment="Left" Margin="304,466,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Franklin Gothic Book" Width="456"/>
+        <Label x:Name="x_Copy" Content="Mirania" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="442,494,0,-18" VerticalAlignment="Top" FontSize="16" FontFamily="Franklin Gothic Book" Width="318"/>
+
+    </Grid>
+</Window>

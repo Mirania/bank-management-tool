@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApplication1.LoanDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Bank Management Tool" MinHeight="600" MaxHeight="600" MinWidth="800" MaxWidth="800">
+    <Grid>
+        <Border BorderBrush="Gainsboro" Background="GhostWhite" BorderThickness="1" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="788" Margin="0,0,-28,0">
+            <Image Source="logo.png" Margin="609,-1,9,-1"/>
+
+        </Border>
+        <Label x:Name="label" Content="Loan Details" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" Height="42" Width="590" FontFamily="Franklin Gothic Book" FontSize="24"/>
+        <Label x:Name="textBox" Height="23" Margin="487,12,173,0" Content="Return to Menu" VerticalAlignment="Top" Width="100" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="515,35,0,0" VerticalAlignment="Top" Width="58" Height="53" Background="{x:Null}" BorderBrush="{x:Null}" Click="button_Click">
+            <Image Source="undo_256.png" Height="39" Width="70" />
+        </Button>
+        <TextBox x:Name="t1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="26,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy" Content="Loan ID" HorizontalAlignment="Left" Margin="24,117,0,0" VerticalAlignment="Top" Width="106" FontSize="14"/>
+        <Label x:Name="label2_Copy1" Content="Client ID" HorizontalAlignment="Left" Margin="26,195,0,0" VerticalAlignment="Top" Width="77" FontSize="14"/>
+        <TextBox x:Name="t2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="638,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy2" Content="Account ID" HorizontalAlignment="Left" Margin="668,202,0,0" VerticalAlignment="Top" Width="82" FontSize="14"/>
+        <TextBox x:Name="t3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="218,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy3" Content="Type" HorizontalAlignment="Left" Margin="296,117,0,0" VerticalAlignment="Top" Width="89" FontSize="14" RenderTransformOrigin="0.436,0.475"/>
+        <TextBox x:Name="t4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="26,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <TextBox x:Name="t5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="218,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy5" Content="Client's Name" HorizontalAlignment="Left" Margin="327,195,0,0" VerticalAlignment="Top" Width="113" FontSize="14" RenderTransformOrigin="0.436,0.475"/>
+        <TextBox x:Name="t6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="26,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy6" Content="Object Value (€)" HorizontalAlignment="Left" Margin="25,282,0,0" VerticalAlignment="Top" Width="130" FontSize="14" RenderTransformOrigin="0.436,0.475">
+        </Label>
+        <TextBox x:Name="t7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="26,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy4" Content="Time (months)" HorizontalAlignment="Left" Margin="26,367,0,0" VerticalAlignment="Top" Width="104" FontSize="14" RenderTransformOrigin="0.436,0.475"/>
+        <TextBox x:Name="t8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="224,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy7" Content="Requested Value (€)" HorizontalAlignment="Left" Margin="224,282,0,0" VerticalAlignment="Top" Width="140" FontSize="14" RenderTransformOrigin="0.436,0.475">
+        </Label>
+        <TextBox x:Name="t9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="26,474,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy8" Content="Monthly value (€)" HorizontalAlignment="Left" Margin="26,445,0,0" VerticalAlignment="Top" Width="129" FontSize="14" RenderTransformOrigin="0.436,0.475"/>
+        <TextBox x:Name="t10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="25" Margin="638,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" FontFamily="Franklin Gothic Book" FontSize="18"/>
+        <Label x:Name="label2_Copy9" Content="Status" HorizontalAlignment="Left" Margin="702,117,0,0" VerticalAlignment="Top" Width="48" FontSize="14"/>
+        <Button x:Name="a" Content="✓ Approve Loan" HorizontalAlignment="Left" Margin="451,445,0,-9" VerticalAlignment="Top" Width="136" Height="68" FontFamily="Franklin Gothic Book" FontSize="18" Click="buttona_Click"/>
+        <Button x:Name="d" Content="✘ Delete Loan" HorizontalAlignment="Left" Margin="614,445,0,-9" VerticalAlignment="Top" Width="136" Height="68" FontFamily="Franklin Gothic Book" FontSize="18" Click="buttond_Click"/>
+    </Grid>
+</Window>
